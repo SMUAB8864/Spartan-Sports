@@ -1,0 +1,27 @@
+.b-logo-image {
+    height: 45px;
+}
+
+/* button1 {
+    margin-left: 175vh;
+} */
+
+h6 {
+    color: azure;
+}
+
+button2 {
+    margin-left: 180vh;
+    margin-top: -20px;
+}
+
+form {
+    height: 30px;
+}
+
+body {
+    font-family: ‘Roboto Condensed’, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 18px;
+    color: #303030; }
+
