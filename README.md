@@ -1,9 +1,9 @@
 # Spartan-Sports
 
 ## Description
-E-Commerce website selling sport clothes
-Front-end build using html css
-Back-end build using express, node, mysql, and sequalize to create a dynamic database, server, and routing for a webpage
+E-Commerce website sells sport clothes:
+* Front-end build using html css
+* Back-end build using express, node, mysql, and sequalize to create a dynamic database, server, and routing for a webpage
 
 ## Table of Contents
 * [Installation](#installation)
