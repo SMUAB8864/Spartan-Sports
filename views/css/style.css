@@ -11,6 +11,8 @@
     --roboto: "Roboto", sans-serif;
     --Spartan: "Spartan", bold;
     --Lobster: "Lobster", regular;
+    --Righteous: "Righteous", regular;
+    --Abril: "Abril", regular;
 }
 
 .primary-color{
@@ -110,6 +112,19 @@ header .site-title{
 
 }
 
-.slider-two .slick-track .product:hover span {
+.site-slider-two .slick-track .product:hover span {
     background-color: var(--primary-color);
+}
+
+.site-slider-two img{
+    width: 100%;
+    height: 100%;
+}
+
+.text-color h5{
+    color:var(--primary-color)
+}
+
+footer{
+    font-family: var(--Abril);
 }
