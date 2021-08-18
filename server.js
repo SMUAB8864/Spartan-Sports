@@ -1,7 +1,8 @@
-const path = require('path');
-const express = require('express');
-const session = require('express-session');
-const exphbs = require('express-handlebars');
+const home = require('home');
+const features = require('features');
+const collection = require('collection');
+const shop = require('shop');
+const aboutUs = require('aboutUs');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
 
