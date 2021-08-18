@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spartan Sports</title>
+
+    <!-- Bootstrap CDN--> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Font Awesome CDN-->
+    <script src="https://kit.fontawesome.com/5fa8334092.js" crossorigin="anonymous"></script>
+
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+
+    <!-- custom Stylesheet --> 
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
+
+    <!-- jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- google api for checkout -->
+    <script src=“https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js”></script>
+
+
+</head>
+<body> 
+    <!--header-->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-12">
+                    <div class="btn-group">
+                        <button class="btn border dropdown-toggle my-md-4 my-2 text-white" 
+                        data-toggle="dropdown" 
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >
+                        USD
+                    </button>
+                    <div class="dropdown-menu">
+                       <a href="#" class="dropdown-item">ERU - Euro</a> 
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 text-center">
+                    <h2 class="my-md-3 site-title text-white">
+                          <!-- <a class="b-logo-link" href="index.html" title="Spartan-Sports US"> -->
+        <img class="b-logo-image" src="./assets/Helmet2.png" title="Spartan-Sports" alt="Spartan-Sports Logo">
+        </a>Spartan Sports</h2>
+                </div>
+                <div style="text-align: right;" class="col-md-4 col-12 text">
+                    <p class="my-md-4 header-links">
+                        <a href="#" class="px-2">Sign In</a>
+                        <a href="#" class="px-1">Create an Account</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">FEATURES</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">COLLECTION</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">SHOP</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="navbar-nav">
+                    <li class="nav-item border rounded-circle mx-2 search-icon">
+                        <i class="fas fa-search p-2"></i>
+                    </li>
+                    <li class="nav-item border rounded-circle mx-2 cart-icon">
+                        <i class="fas fa-shopping-cart p-2"></i>
+                    </li>
+                </div>
+              </nav>
+        </div>
+    </header>
+
+     <!--header-->
+
+     <!-- Main Section -->
+
+    <main>
+        <body class=“bg-dark”>
+            <div class =“container”>
+                <div class=“col-md-7 col-lg-8">
+                    <h4 class=“mb-3 text-light”>Billing address</h4>
+                    <form class=“needs-validation” novalidate>
+                        <div class=“row g-3”>
+                            <div class=“col-sm-6">
+                                <label for=“firstName” class=“text-light”>First name</label>
+                                <input type=“text” class=“form-control” id=“firstName” placeholder value required>
+                                <div class=“invalid-feedback”> Valid first name is required. </div>
+                            </div>
+                            <div class=“col-sm-6”>
+                                <label for=“lastName” class=“text-light”>Last last</label>
+                                <input type=“text” class=“form-control” id=“lastName” placeholder value required>
+                                <div class=“invalid-feedback”> Valid last name is required. </div>
+                            </div>
+                            <div class=“col-12">
+                                <label for=“username” class=“text-light”>Username</label>
+                                <div class=“input-group has-validation”>
+                                    <span class=“input-group-text”>@</span>
+                                    <input type=“text” class=“form-control” id=“username” placeholder=“Username” required>
+                                    <div class=“invalid-feedback”> Your username is required. </div>
+                                </div>
+                            </div>
+                            <div class=“col-12">
+                                <label for=“email” class=“text-light”>
+                                    “Email ”
+                                    <span class=“text-muted”>(Optional)</span>
+                                </label>
+                                <input type=“email” class=“form-control” id=“email” placeholder=“you@example.com”>
+                                <div class=“invalid-feedback”>
+                                    ” Please enter a valid email address for shipping updates. ”
+                                </div>
+                            </div>
+                            <div class=“col-12">
+                                <label for=” address” class=“text-light”>Address</label>
+                                <input type=“text” class=“form-control” id=“address” placeholder=“1234 Main St” required>
+                                <div class=“invalid-feedback”> Please enter your shipping address. </div>
+                            </div>
+                            <div class=“col-12”>
+                                <label for=“address2" class=“text-light”>
+                                    “Address 2 ”
+                                    <span class=“text-muted”>(Optional)</span>
+                                </label>
+                                <input type=“text” class=“form-control” id=“address2" placeholder=“Apartment or suite”>
+                            </div>
+                            <div class=“col-md-5">
+                                <label for=“country” class=“text-light”>Country</label>
+                                <select class=“form-select” id=“country” required>
+                                    <option value>Choose...</option>
+                                    <option>United States</option>
+                                </select>
+                                <div class=“invalid-feedback”> please select a country. </div>
+                                <div class=“col-md-4">
+                                    <label for=“state” class=“text-light”>State</label>
+                                    <select class=“form-select” id=“state” required>
+                                        <option value>Choose...</option>
+                                        <option>Texas</option>
+                                    </select>
+                                    <div class=“invalid-feedback”> Please provide a valid state. </div>
+                                </div>
+                                <div class=“col-md-3">
+                                    <label for=“zip” class=“text-light”>Zip</label>
+                                    <input type=“text” class=“form-control” id=“zip” placeholder required>
+                                    <div class=“invalid-feedback”> Zip code required.
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class=“my-4”>
+                            <div class=“form-check”>
+                                <input type=“checkbox” class=“form-check-input” id=“same-address”>
+                                <label class=“form-check-label text-light” for=“same-address”>
+                                    Shipping address is the same as my billing address
+                                </label>
+                            </div>
+                            <div class=“form-check”>
+                                <input type=“checkbox” class=“form-check-input” id=“save-info”>
+                                <label class=“form-check-label text-light” for=“save-info”>Save this information for next time</label>
+                            </div>
+                            <hr class=“my-4">
+                            <h4 class=“my-3 text-light”>Payment</h4>
+                            <div class=“my-3">
+                                <div class=“form-check”>
+                                    <input id=“credit” name=“paymentMethod” type=“radio” class=“form-check-input” check required>
+                                    <label class=“form-check-label text-light” for=“credit”>Credit card</label>
+                                </div>
+                                <div class=“form-check”>
+                                    <input id=“debit” name=“paymentMethod” type=“radio” class=“form-check-input” required>
+                                    <label class=“form-check-label text-light” for=“debit”>Debit card</label>
+                                </div>
+                                <div class=“form-check”>
+                                    <input id=“paypal” name=“paymentMethod” type=“radio”
+                                    class=“form-check-input” required>
+                                    <label class=“form-check-label text-light” for=“paypal”>paypal
+                                    </label>
+                                </div>
+                            </div>
+                            <div class=“row gy-3">
+                                <div class=“col-md-6”>
+                                    <label for=“cc-name” class=“text-light”>Name on card
+                                    </label>
+                                    <input type=“text” class=“form-control” id=“cc-name” placeholder required>
+                                    <small class=“text-muted”>Full name as displayed on card</small>
+                                    <div class=“invalid-feedback”> Name on card is required </div>
+                                </div>
+                                <div class=“col-md-6”>
+                                    <label for=“cc-number” class=“text-light”>Credit card number</label>
+                                    <input type=“text” class=“form-control” id=“cc-number” placeholder required>
+                                    <div class=“invalid-feedback”> Credit card number is required </div>
+                                </div>
+                                <div class=“col-md-3">
+                                    <label for=“cc-expiration” class=“text-light”>Expiration</label>
+                                    <input type=“text” class=“form-control” id=“cc-expiration” placeholder required>
+                                    <div class=“invalid-feedback”> Expiration date required</div>
+                                </div>
+                                <div class=“col-md-3”>
+                                    <label for=“cc-cvv” class=“text-light”>CVV</label>
+                                    <input type=“text” class=“form-control” id=“cc-cvv” placeholder required>
+                                    <div class=“invalid-feedback”> Secuirty code required</div>
+                                </div>
+                            </div>
+                            <div class=“container-fluid”>
+                            <hr class=“my-4”>
+                            <button class=“w-100 btn btn-primary btn-lg” type=“submit”>Continue to checkout</button>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </body>
+
+    </main>
+
+    <!-- Main Section -->
+
+    <footer><footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <small class="d-block mb-3 text-muted">© 2021</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Cool stuff</a></li>
+            <li><a class="text-muted" href="#">Random feature</a></li>
+            <li><a class="text-muted" href="#">Team feature</a></li>
+            <li><a class="text-muted" href="#">Stuff for athletes</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Supported Brands</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Nike</a></li>
+            <li><a class="text-muted" href="#">Adidas</a></li>
+            <li><a class="text-muted" href="#">Reebok</a></li>
+            <li><a class="text-muted" href="#">Underarmour</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Team</a></li>
+            <li><a class="text-muted" href="#">Locations</a></li>
+            <li><a class="text-muted" href="#">Privacy</a></li>
+            <li><a class="text-muted" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer></footer>
+
+
+    
+    
+ 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>  
+    <!-- <script src="../js/main.js"></script>   -->
+    <script src="./js/main.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- slick CDN -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+</body>
+
+
+</html>
